@@ -18,9 +18,7 @@ export class AppComponent {
   newTask = ''
 
 
-  items = [
 
-  ] as Task[]
 
 
 
@@ -36,24 +34,7 @@ export class AppComponent {
   }
 
 
-  addNewTask() {
-    this.items.push({
-      completed: false,
-      name: this.newTask.trim()
-    })
-    this.newTask = ''
-  }
 
-  completeTask(task: Task) {
-    this.items = this.items.map(item =>
-      item.name === task.name ? { ...item, completed: true } : item
-    );
-
-  }
-
-  deleteTask(task: Task) {
-    this.items = this.items.filter(item => item.name !== task.name );
-  }
 
 
 }

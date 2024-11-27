@@ -8,19 +8,6 @@
   {{counter}}
   <button (click)="sumCounter(-1)" >-</button>
 
-  <input
-  type="text"
-  [(ngModel)]="newTask"
-  (keyup.enter)="addNewTask()"
-  placeholder="Write new task..." />
-  <ul>
-    <li *ngFor="let item of items; let i= index ">
-     <span [ngClass]="item.completed? 'completed': ''" (click)="completeTask(item)">
-      {{item.name}}
-     </span>
-     <span (click)="deleteTask(item)">X</span>
-    </li>
-  </ul>
 
 </main>
 
