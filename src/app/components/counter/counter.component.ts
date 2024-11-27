@@ -5,6 +5,14 @@ import { Component } from "@angular/core";
   selector:'counter',
   templateUrl: './counter.component.html'
 })
-export class Counter {
+export class CounterComponent {
+  counter = 0
+
+
+
+  sumCounter(value: number) {
+    this.counter = this.counter + value
+  }
+
 
 }
