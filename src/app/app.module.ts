@@ -5,21 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms'
 import { TodoListComponent } from './components/todolist/todolist.component';
+import { CounterComponent } from "./components/counter/counter.component";
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoListComponent
+    TodoListComponent,
+    CounterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
 
-
-  ],
+],
   providers: [],
   bootstrap: [AppComponent]
 })
