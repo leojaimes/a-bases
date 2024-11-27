@@ -7,6 +7,7 @@ import { Task } from "../../shared/models/tasks.interfaces";
   selector:'todo-list',
   templateUrl:'./todolist.component.html',
   standalone: false,
+  styleUrl: './todolist.component.scss'
 })
 export class TodoListComponent {
 
