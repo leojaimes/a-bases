@@ -18,4 +18,12 @@ export class HeroComponent {
   get heroDescription(): string {
     return `${this.name} - ${this.age}`;
   }
+
+  chageHero() {
+    this.name = this.name === 'Spiderman' ? 'Ironman' : 'Spiderman';
+  }
+
+  changeAge() {
+    this.age = this.age === 28 ? 45 : 28;
+  }
 }
