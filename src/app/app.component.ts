@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { Task } from './shared/models'
-
-
+import { Task } from './shared/models';
 
 @Component({
   selector: 'app-root',
@@ -11,18 +9,11 @@ import { Task } from './shared/models'
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-
   title = 'My frist Angular Application';
 
-  constructor(private titleService: Title) { }
-
+  constructor(private titleService: Title) {}
 
   ngOnInit() {
     this.titleService.setTitle(this.title);
   }
-
-
-
-
-
 }
