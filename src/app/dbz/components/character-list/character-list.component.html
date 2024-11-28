@@ -1,8 +1,19 @@
 <ul class="list-group">
   <li
-    *ngFor="let character of characters; let i = index"
-    class="list-group-item"
+    *ngFor="
+      let character of characters;
+      let i = index;
+      let isEven = even;
+      let isOdd = odd
+    "
+    class="list-group-item d-flex justify-content-between"
+    [ngClass]="{
+      'list-group-item-primary': isEven,
+      'list-group-item-info': isOdd,
+    }"
   >
-    {{ character.name }} - {{ character.power }}
+    <span>{{ character.name }} - {{ character.power }}</span>
+
+    <button class="btn btn-danger">X</button>
   </li>
 </ul>

@@ -14,4 +14,8 @@ export class MainPageComponent {
     { name: 'Vegeta', power: 8500 },
     { name: 'Frieza', power: 10000 },
   ];
+
+  addCharacter(character: Character) {
+    this.characters.push(character);
+  }
 }
