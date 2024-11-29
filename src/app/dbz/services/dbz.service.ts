@@ -13,7 +13,7 @@ export class DbzService {
   ];
 
   addCharacter(character: Character) {
-    this.characters.push(character);
+    this.characters.push({ id: uuidv4(), ...character });
   }
 
   deleteCharacter(character: Character) {
