@@ -13,11 +13,11 @@ export class MainPageComponent {
   get characters() {
     return this.dbzService.characters;
   }
-  get deleteCharacter(): (character: Character) => void {
-    return this.dbzService.deleteCharacter;
+  deleteCharacter(character: Character): void {
+    this.dbzService.deleteCharacter(character);
   }
 
-  get addCharacter(): (character: Character) => void {
-    return this.dbzService.addCharacter;
+  addCharacter(character: Character): void {
+    this.dbzService.addCharacter(character);
   }
 }

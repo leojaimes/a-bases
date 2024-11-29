@@ -18,7 +18,7 @@ export class DbzService {
 
   deleteCharacter(character: Character) {
     this.characters = this.characters.filter(
-      (characterIn) => characterIn.id !== character.id
+      (characterIn) => characterIn.id != character.id
     );
   }
 }
