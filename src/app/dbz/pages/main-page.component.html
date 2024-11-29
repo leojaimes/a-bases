@@ -3,14 +3,12 @@
   <div class="col">
     <h4>Listado</h4>
     <app-character-list
-      [characters]="dbzService.characters"
-      (onDeleteCharacter)="dbzService.deleteCharacter($event)"
+      [characters]="characters"
+      (onDeleteCharacter)="deleteCharacter($event)"
     />
   </div>
   <div class="col">
     <h4>Add Character</h4>
-    <app-add-character-form
-      (onAddCharacter)="dbzService.addCharacter($event)"
-    />
+    <app-add-character-form (onAddCharacter)="addCharacter($event)" />
   </div>
 </div>
